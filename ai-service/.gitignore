@@ -1,0 +1,407 @@
+# ============================================
+# Python AI Service . gitignore
+# ============================================
+
+# -------------------- Python --------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py. class
+*.so
+
+# C extensions
+*.c
+*.cpp
+*.h
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*. manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory. txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+. cache
+nosetests.xml
+coverage.xml
+*.cover
+*. log
+. hypothesis/
+.pytest_cache/
+. ruff_cache/
+
+# -------------------- Virtual Environments --------------------
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+. venv/
+.conda/
+conda-env/
+pyenv/
+. python-version
+
+# -------------------- IDEs & Editors --------------------
+# VSCode
+.vscode/
+*. code-workspace
+
+# PyCharm
+.idea/
+*. iml
+*. iws
+*. ipr
+
+# Sublime Text
+*. sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# -------------------- Jupyter Notebook --------------------
+.ipynb_checkpoints/
+*. ipynb
+jupyter_notebook_config.py
+. jupyter/
+
+# -------------------- AI/ML Model Files --------------------
+# PyTorch
+*. pt
+*.pth
+*. ckpt
+checkpoint/
+checkpoints/
+lightning_logs/
+
+# TensorFlow
+*.h5
+*.hdf5
+*.pb
+*.tflite
+*. ckpt
+*. ckpt.*
+saved_model/
+saved_models/
+tensorboard/
+tb_logs/
+
+# Keras
+*.keras
+
+# Scikit-learn / Joblib
+*.pkl
+*.pickle
+*.joblib
+
+# ONNX
+*. onnx
+
+# Hugging Face
+*. bin
+*.safetensors
+transformers_cache/
+. cache/huggingface/
+
+# Core ML
+*.mlmodel
+*.mlpackage
+
+# Other model formats
+*.model
+*.weights
+*.mar
+*.params
+models/
+pretrained/
+fine_tuned/
+trained_models/
+
+# -------------------- Data Files --------------------
+# Datasets
+data/
+datasets/
+raw_data/
+processed_data/
+training_data/
+test_data/
+validation_data/
+
+# Common data formats
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.ndjson
+*.xml
+*.yaml
+*.yml
+*. parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# TFRecord
+*.tfrecord
+*.tfrecords
+
+# Images (if not needed in repo)
+# Uncomment if you want to ignore images
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+# *.webp
+# *.svg
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.m4a
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*. rar
+*.7z
+
+# -------------------- ML Experiment Tracking --------------------
+# MLflow
+mlruns/
+. mlflow/
+mlflow.db
+
+# Weights & Biases
+wandb/
+*.wandb
+
+# TensorBoard
+tensorboard/
+runs/
+logs/
+
+# DVC (Data Version Control)
+.dvc/
+*. dvc
+
+# Neptune. ai
+.neptune/
+
+# Comet.ml
+.comet/
+
+# -------------------- Embeddings & Vectors --------------------
+*. npy
+*.npz
+embeddings/
+vectors/
+vector_store/
+faiss_index/
+*. index
+*.faiss
+
+# -------------------- Environment Variables & Secrets --------------------
+. env
+.env.*
+.envrc
+*. secret
+*.key
+. secrets/
+secrets/
+credentials.json
+service-account.json
+api_keys.txt
+config.local.yaml
+config.local.yml
+
+# AWS
+. aws/
+
+# GCP
+*. json
+! requirements.json
+!package.json
+
+# -------------------- Cache --------------------
+. cache/
+*. cache
+. mypy_cache/
+.dmypy.json
+dmypy. json
+.pytype/
+.pyre/
+.pylint. d/
+
+# -------------------- Logs --------------------
+logs/
+*.log
+*.out
+*.err
+log/
+output/
+
+# -------------------- Docker --------------------
+*. dockerfile. swp
+docker-compose.override.yml
+. dockerignore
+
+# -------------------- Temporary Files --------------------
+tmp/
+temp/
+*. tmp
+*.bak
+*.backup
+*~
+
+# -------------------- OS --------------------
+# macOS
+.DS_Store
+. AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE. BIN/
+
+# Linux
+*~
+.directory
+. Trash-*
+
+# -------------------- Package Managers --------------------
+# Poetry
+poetry.lock
+. poetry/
+
+# Pipenv
+Pipfile.lock
+
+# PDM
+. pdm.toml
+__pypackages__/
+
+# -------------------- API Documentation --------------------
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+. sphinx/
+
+# MkDocs
+site/
+
+# -------------------- FastAPI / Flask / Django --------------------
+# FastAPI
+*. db
+instance/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Flask
+instance/
+.webassets-cache
+
+# -------------------- Monitoring & Profiling --------------------
+*. prof
+*.lprof
+. prof/
+
+# -------------------- Miscellaneous --------------------
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Scrapy
+.scrapy
+
+# Rope project settings
+.ropeproject
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Pyre type checker
+. pyre/
+
+# pyright
+pyrightconfig.json
+
+# -------------------- Custom AI Service --------------------
+# Add your specific AI service files here
+output/
+results/
+predictions/
+inference_results/
+evaluation/
+experiments/
+checkpoints_temp/

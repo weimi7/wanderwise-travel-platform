@@ -1,0 +1,234 @@
+/* ==============================
+   FONT IMPORTS
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+/* ==============================
+   ROOT VARIABLES
+================================= */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-merriweather);
+}
+
+/* ==============================
+   BASE STYLES
+================================= */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ==============================
+   SCROLLBAR
+================================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e2939;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #155dfc;
+  border-radius: 10px;
+  border: 2px solid #1e2939;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #155dfc #1e2939;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==============================
+   TYPOGRAPHY
+================================= */
+.prose {
+  max-width: none;
+}
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.prose-lg {
+  font-size: 1.125rem;
+}
+.dark .prose-invert {
+  color: #d1d5db;
+}
+
+.overview-text {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+}
+
+.line-clamp-1,
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.line-clamp-1 { -webkit-line-clamp: 1; }
+.line-clamp-2 { -webkit-line-clamp: 2; }
+
+/* ==============================
+   EFFECTS & ANIMATIONS
+================================= */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-effect {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+.dark .shimmer-effect {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+}
+
+/* Pulse animation */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.05); }
+}
+.pulse-slow, .animate-pulse-slow {
+  animation: pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.delay-1000 { animation-delay: 1s; }
+.delay-2000 { animation-delay: 2s; }
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float, .float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ==============================
+   COMPONENT UTILITIES
+================================= */
+.highlight-item {
+  position: relative;
+  padding-left: 2rem;
+}
+.highlight-item::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  font-size: 1.2rem;
+}
+
+/* Glassmorphism */
+.glass, .glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark .glass, .dark .glass-effect {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fix Leaflet z-index */
+.leaflet-container, .leaflet-pane {
+  z-index: 1 !important;
+}
+
+.prose h3 {
+  color: #2563eb; /* blue-600 */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose ul {
+  margin-left: 1rem;
+}
+
+.prose strong {
+  color: #1e3a8a; /* blue-800 */
+}
+
+/* Premium scrollbar for itinerary */
+.itinerary-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.itinerary-scroll::-webkit-scrollbar-thumb {
+  background: #6366f1; /* Indigo glow */
+  border-radius: 20px;
+}
+
+.itinerary-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
