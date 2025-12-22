@@ -138,7 +138,7 @@
 | **[Google Auth Library](https://github.com/googleapis/google-auth-library-nodejs)** | 10.5.0 | Google OAuth implementation |
 | **[Bcrypt](https://www.npmjs.com/package/bcrypt)** | 6.0.0 | Password hashing |
 | **[Cloudinary](https://cloudinary.com/)** | 2.8.0 | Image upload and management |
-| **[Nodemailer](https://nodemailer.com/)** | 7.0.11 | Email service |
+| **[SendGrid](https://sendgrid.com/en-us/)** | 8.1.6 | Email service |
 
 ### AI Service (`/ai-service`)
 
