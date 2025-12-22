@@ -147,7 +147,7 @@
 | **[FastAPI](https://fastapi.tiangolo.com/)** | High-performance Python web framework |
 | **[Hugging Face](https://huggingface.co/)** | AI model inference |
 | **[Uvicorn](https://www.uvicorn.org/)** | ASGI server |
-| **Python 3.10+ (3.14)** | Programming language |
+| **[Python 3.10+ (3.14)](https://www.python.org/)** | Programming language |
 
 ---
 
